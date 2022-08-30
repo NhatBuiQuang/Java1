@@ -26,5 +26,4 @@ public class Test_Nhat {
         
         // TODO code application logic here
     }
-    
 }

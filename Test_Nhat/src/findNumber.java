@@ -17,7 +17,7 @@ public class findNumber {
         System.out.println("Nhap chuoi: ");
         str = sc.nextLine();
         char[] check = str.toCharArray();
-        StringBuilder sb = new StringBuilder(); //Lớp StringBuilder để tạo string có thể thay đổi
+        StringBuilder sb = new StringBuilder(); //Lớp StringBuilder để tạo string có thể thay đổi (mutable)
         for (char c : check) {
             if (Character.isDigit(c)) {
                 sb.append(c); //Được sử dụng để phụ thêm (append) chuỗi đã cho với chuỗi này. Phương thức append() được nạp chồng giống dạng append(char),...

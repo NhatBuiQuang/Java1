@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 package test_nhat;
-import java.util.*;
+
 /**
  *
  * @author WBPC.VN
  */
-public class FindMax {
-    
+public class Bai1 {
+//    abv
 }
