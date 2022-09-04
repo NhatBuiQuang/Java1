@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import com.sun.xml.internal.stream.Entity;
 import java.util.*;
 
 /**
  *
  * @author WBPC.VN
  */
-public class Bai2_checkPrime {
+public class Bai3_countPrimeArray {
 
     private static boolean isPrime(int x) { //Check if a number is prime number or not
         int sqrtValue = (int) Math.sqrt(x);
@@ -25,12 +24,20 @@ public class Bai2_checkPrime {
     public static void main(String[] args) {
         int n;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
+        System.out.println("Nhap so phan tu cua mang: ");
         n = sc.nextInt();
-        if (isPrime(n)) {
-            System.out.println("True");
-        } else {
-            System.out.println("False");
+        int a[] = new int[n];
+        System.out.println("Nhap phan tu: ");
+        for (int i = 0; i < n; i++) {
+            System.out.printf("a[%d] = ", i);
+            a[i] = sc.nextInt();
         }
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (isPrime(a[i])) {
+                count ++;
+            }
+        }
+        System.out.println("Co " + count + " phan tu la so nguyen to");
     }
 }
