@@ -12,7 +12,7 @@ import java.util.*;
 public class findNumber {
 
     public static void main(String[] args) {
-        String str = new String();
+        String str;
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap chuoi: ");
         str = sc.nextLine();
@@ -22,9 +22,10 @@ public class findNumber {
         for (char c : check) {
             if (Character.isDigit(c)) {
                 sb.append(c); //Được sử dụng để phụ thêm (append) chuỗi đã cho với chuỗi này. Phương thức append() được nạp chồng giống dạng append(char),...
-                sum += c;
+                sum += (int) c - 48;
             }
         }
         System.out.println(sb + " ");
+        System.out.println("Tong cac so la: " + sum);
     }
 }
