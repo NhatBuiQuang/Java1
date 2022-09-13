@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test_nhat;
+package NapChong;
 import java.util.*;
 /**
  *
  * @author WBPC.VN
  */
-public class SapXep {
-    int a[], n;
-    int temp = 0;
-}
-
-public static void SortASC (int a[]){
-int temp = a[0];
-
+public class Circle {
+    public static double getArea(int radius){
+        return radius*radius*Math.PI;
+    }
+    
+    public static double getArea(float radius){
+        return radius*radius*Math.PI;
+    }
 }

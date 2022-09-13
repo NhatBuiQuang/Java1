@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package test_nhat;
+
 import java.util.*;
+
 /**
  *
  * @author WBPC.VN
@@ -15,15 +17,15 @@ public class Test_Nhat {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int a,b;
+        int a, b;
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap so 1: ");
         a = sc.nextInt();
         System.out.println("Nhap so 2: ");
         b = sc.nextInt();
-        int sum = a+b;
-        System.out.println("Tong cua a va b la: " +sum);
-        
+        int sum = a + b;
+        System.out.println("Tong cua a va b la: " + sum);
+
         // TODO code application logic here
     }
 }
